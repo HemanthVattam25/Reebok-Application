@@ -1,0 +1,73 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(38, 63, 63);
+  height: 50px;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  margin: 0px;
+  font-size: 20px;
+}
+
+#links a:nth-child(1),
+a:nth-child(2) {
+  display: none;
+}
+
+#logo {
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin: auto;
+  width: 400px;
+  margin-top: 100px;
+}
+/* Form styling */
+#form input {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#form input[type="email"],
+input[type="password"] {
+  background-color: ghostwhite;
+}
+#form input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+#form input[type="submit"] {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #5cb85c;
+}
+
+#form label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.terms-checkbox {
+  display: flex;
+  align-items: center;
+}

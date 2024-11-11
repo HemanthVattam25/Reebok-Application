@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reebok</title>
+    <link rel="stylesheet" href="./womens.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div id="logo"><a href="../Navbar/index.html">Reebok</a></div>
+      <div id="links">
+        <a href="../MensPage/mens.html">Men</a>
+        <a href="../WomensPage/womens.html">Women</a>
+        <a href="../CartPage/cart.html">Cart <span> 🛒</span></a>
+        <a href="../LoginPage/login.html">Logout</a>
+      </div>
+    </div>
+    <h1>Women's Fashion</h1>
+    <div class="view-options">
+      <!-- Filter By Category -->
+      <select name="filter" id="filter" onchange="handleFilter()">
+        <option value="select">Filter By Category</option>
+        <option value="caps">CAPS</option>
+        <option value="topwear">TOPWEAR</option>
+        <option value="bottomwear">BOTTOMWEAR</option>
+        <option value="footwear">FOOTWEAR</option>
+      </select>
+
+      <!-- Sort by price -->
+      <select name="sortPrice" id="sortPrice" onchange="handlePriceSort()">
+        <option value="sort-type">Sort by Price</option>
+        <option value="LTH">low to high</option>
+        <option value="HTL">high to low</option>
+      </select>
+
+      <select name="sortName" id="sortName" onchange="handleNameSort()">
+        <option value="sort-type">Sort by Name</option>
+        <option value="asc">Ascending</option>
+        <option value="dsc">Descending</option>
+      </select>
+    </div>
+
+    <div class="products">
+      <h2>Caps</h2>
+      <section class="caps">
+        <div class="item">
+          <img
+            class="pic"
+            src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/8173193/2019/2/13/5a75bedb-ae75-41e9-9a8a-deaa0743e1971550054845093-Reebok-Classic-Unisex-Beige-Solid-Baseball-Cap-9011550054844-5.jpg"
+            alt="reebok cap"
+          />
+          <p class="Category">CLASSIC CAP</p>
+          <p class="itemName">Reebok Women's Cap</p>
+          <h4 class="price">₹799</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://images.reebok.eu/reebok-reebok-vector-baseball-cap_24180342_56226770_2048.jpg?c=1"
+            alt="reebok cap"
+          />
+          <p class="Category">STYLISH CAP</p>
+          <p class="itemName">Reebok Women's Cap</p>
+          <h4 class="price">₹599</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://i.sportisimo.com/products/images/480/480237/700x700/reebok-sport-essentials-women-badge-cap_0.jpg"
+            alt="reebok cap"
+          />
+          <p class="Category">SPORTS CAP</p>
+          <p class="itemName">Reebok Women's Cap</p>
+          <h4 class="price">₹1049</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://4.imimg.com/data4/CC/CC/GLADMIN-/https-content-shop4reebok-com-static-product-ab1005-women_training_cap_ab1005_1-500x500.jpg"
+            alt="reebok cap"
+          />
+          <p class="Category">TRAINING CAP</p>
+          <p class="itemName">Reebok Women's Cap</p>
+          <h4 class="price">₹549</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+      </section>
+
+      <h2>Topwear</h2>
+      <section class="topwear">
+        <div class="item">
+          <img
+            class="pic"
+            src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/27596624/2024/2/14/d5f19dc3-004c-4536-979c-1663301b2bec1707913025704ReebokPrintedHoodedSweatshirts1.jpg"
+            alt="tshirt"
+          />
+          <p class="Category">ATHLETIC HOODIE</p>
+          <p class="itemName">Reebok Women's Topwear</p>
+          <h4 class="price">₹1499</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/22838430/2023/5/17/89f959f0-23ff-4e1b-8186-c84cbff75f0a1684305965149-Reebok-Printed-Tank-Top-1361684305964575-1.jpg"
+            alt="tshirt"
+          />
+          <p class="Category">SLEEVELESS T-SHIRT</p>
+          <p class="itemName">Reebok Mens Sweatshirt</p>
+          <h4 class="price">₹999</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/29518398/2024/5/24/fd67071f-bea0-42be-8f0f-86ebfd044b5d1716554054216-Reebok-Women-Tshirts-6181716554053739-1.jpg"
+            alt="tshirt"
+          />
+          <p class="Category">COTTON T-SHIRT</p>
+          <p class="itemName">Women's Prime T-shirt</p>
+          <h4 class="price">₹1099</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/14795674/2021/8/9/f2fbcdc3-1fab-4b29-8896-e13b0c0d23101628499115787TrackPantsReebokMenSareesMiteraWomenSareesMiteraWomenSareesM1.jpg"
+            alt="tshirt"
+          />
+          <p class="Category">FULL SLEEVE SOLID JACKET</p>
+          <p class="itemName">Reebok Women's Jacket</p>
+          <h4 class="price">₹1399</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+      </section>
+
+      <h2>Bottomwear</h2>
+      <section class="bottomwear">
+        <div class="item">
+          <img
+            class="pic"
+            src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/21076368/2022/12/5/0896110b-2ef6-4875-8cca-5451d7b22d661670240476969ReebokWomenSlim-FitSportsCapris1.jpg"
+            alt=""
+          />
+          <p class="Category">YOGA TRACK PANT</p>
+          <p class="itemName">Reebok Womens Olive Pant</p>
+          <h4 class="price">₹1799</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/18666560/2023/6/8/91116be3-5ede-438c-a475-631e6502000b1686214766887-Reebok-Classic-Women-Printed-WCE-Tights-2111686214766311-1.jpg"
+            alt=""
+          />
+          <p class="Category">TRACK PANT</p>
+          <p class="itemName">Reebok Women's Navy Blue Track Pant</p>
+          <h4 class="price">₹1999</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/16761740/2022/4/12/70599a26-7800-4dc3-8753-a163fee824bf1649761430809TrackPantsReebokWomenTrackPantsReebokWomenTrackPantsReebokWo1.jpg"
+            alt=""
+          />
+          <p class="Category">TRACK PANT</p>
+          <p class="itemName">Reebok Women's light green Track Pant</p>
+          <h4 class="price">₹1499</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2024/AUGUST/31/XasF7Vxt_00d08e7bd18a40c0869fe2282f73f0a5.jpg"
+            alt=""
+          />
+          <p class="Category">TRACK PANT</p>
+          <p class="itemName">Reebok Women's Dark Gray Track Pant</p>
+          <h4 class="price">₹1799</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+      </section>
+      <h2>Footwear</h2>
+
+      <section class="footwear">
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHIj-7lk1msOp3oEdDNuXKF1Du2DA61rlLvg&s"
+            alt="Reebok shoes"
+          />
+          <p class="Category">WALKING SHOES</p>
+          <p class="itemName">Reebok Women's Walking Shoes</p>
+          <h4 class="price">₹2999</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://reebok.bynder.com/m/49aa569b0a47242b/webimage-23SS_Women-Shoes_Resize_IWP-Tile-RUNNING_MB_V2.png"
+            alt="Reebok shoes"
+          />
+          <p class="Category">SNEAKER SHOES</p>
+          <p class="itemName">Reebok Women's Sneaker Shoes</p>
+          <h4 class="price">₹7499</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://i.pinimg.com/736x/74/6b/76/746b76660535ac413663ef51c21e189d.jpg"
+            alt="Reebok shoes"
+          />
+          <p class="Category">STYLISH SHOES</p>
+          <p class="itemName">Reebok Women's casual shoes</p>
+          <h4 class="price">₹8999</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://reebok.ph/cdn/shop/files/21FW_W-Gender_FD_PLP_Interactive-Wallpaper_Tile_Running_DT3_tcm274-763425_11eedbbd-37ee-49b4-bf2e-2815647b6179.jpg?v=1664079194&width=800"
+            alt="Reebok shoes"
+          />
+          <p class="Category">RUNNING SHOES</p>
+          <p class="itemName">Reebok Women's RUNNING Shoes</p>
+          <h4 class="price">₹10499</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
+<script src="./womens.js"></script>

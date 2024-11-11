@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reebok</title>
+    <link rel="stylesheet" href="./signup.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div id="logo">Reebok</div>
+      <div id="links">
+        <a href="../MensPage/mens.html">Men</a>
+        <a href="../WomensPage/womens.html">Women</a>
+        <a
+          href="../LoginPage/login.html
+          "
+          >Login</a
+        >
+        <a href="../SignupPage/signup.html">Signup</a>
+      </div>
+    </div>
+
+    <div class="signup">
+      <form id="form" method="post">
+        <h1>Welcome, Please Signup!</h1>
+        <label for="userEmail">Email </label>
+        <input
+          type="email"
+          name="userEmail"
+          id="userEmail"
+          placeholder="Enter your email id"
+          required
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          title="Please enter a valid email address (ex: john@gmail.com)."
+        />
+        <label for="signup">Password</label>
+        <input
+          type="password"
+          name="signupPassword"
+          id="signupPassword"
+          placeholder="Enter your Password"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+          title="Password length should be 8 and must Contain atleast 1 Caps and 1 small letter, 1 special character, 1 number"
+          minlength="8"
+          required
+        />
+        <br />
+        <label for="repeatPassword">Confirm your Password</label>
+        <input
+          type="password"
+          name="repeatPassword"
+          id="repeatPassword"
+          placeholder="Re-enter your Password"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+          minlength="8"
+          required
+          oninput="this.setCustomValidity(this.value !== signupPassword.value ? 'Passwords do not match.' : '')"
+        />
+        <br />
+        <div class="terms-checkbox">
+          <input type="checkbox" id="terms" required />
+          <span>I agree to the Terms and Conditions</span>
+        </div>
+        <input type="submit" name="signup" id="signup" value="Sign Up" />
+      </form>
+    </div>
+  </body>
+</html>
+<script src="./signup.js"></script>

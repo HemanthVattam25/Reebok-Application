@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reebok</title>
+    <link rel="stylesheet" href="./payment.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div id="logo"><a href="./index.html">Reebok</a></div>
+      <div id="links">
+        <a href="../MensPage/mens.html">Men</a>
+        <a href="../WomensPage/womens.html">Women</a>
+        <a href="../CartPage/cart.html">Cart <span> 🛒</span></a>
+        <a href="../LoginPage/login.html">Logout</a>
+      </div>
+    </div>
+    <h1>Fill the details to pay the bill</h1>
+    <div id="paymentInfo">
+      <form id="payment-form">
+        <label for="acName">Account Name:</label>
+        <input
+          type="text"
+          name="acName"
+          id="acName"
+          placeholder="Enter Account Name"
+          required
+        />
+        <br />
+        <label for="cardNumber">Enter Valid Card Number:</label>
+        <input
+          type="number"
+          name="cardNumber"
+          id="cardNumber"
+          placeholder="Enter 16 digit Card Number"
+          pattern="\d{4} \d{4} \d{4} \d{4}"
+          maxlength="16"
+          required
+          title="Please enter a card number in the format: 1234 5678 9012 3456"
+        />
+        <br />
+        <label for="cvv"> Enter CVV: </label>
+        <input
+          type="password"
+          name="cvv"
+          id="cvv"
+          placeholder="Enter 3-digit CVV"
+          required
+        />
+        <br />
+        <label for="exp-date">Enter Expiry Date: </label>
+        <input type="month" name="exp-date" id="exp-date" required />
+        <br />
+        <input type="submit" name="payNow" id="payNow" value="Pay Now" />
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="./payment.js"></script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reebok</title>
+    <link rel="stylesheet" href="./cart.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div id="logo"><a href="../Navbar/index.html">Reebok</a></div>
+      <div id="links">
+        <a href="../MensPage/mens.html">Men</a>
+        <a href="../WomensPage/womens.html">Women</a>
+        <a href="./cart.html" id="cartQty">Cart <span> 🛒</span></a>
+        <a href="../LoginPage/login.html">Logout</a>
+      </div>
+    </div>
+    <h1>This is Cart Page</h1>
+    <main class="cartDisplay">
+      <div id="cart-list">
+        <!--    Cart data comes from session storage      -->
+      </div>
+
+      <div id="cart-value">
+        <h1>Cart Value</h1>
+        <div id="cart-info">
+          <div id="finalbill">       
+           <div id="bill"><!--     Data comes from JS   --></div>
+          <div id="finalPrice"><!--     Data comes from JS   --></div>
+         </div>
+          <div id="discount">
+            <!--     Data comes from JS   -->
+          </div>
+        </div>
+        <div id="discount">
+          <!--     Data comes from JS   -->
+        </div>
+        <div class="buy">
+            <label for="promoCode">Apply Promo Code:</label>
+            <div id="promo">
+            <input type="text" name="promoCode" id="promoCode" placeholder="Enter Valid Promo code" />
+            <button id="apply">Apply Promo</button>
+            </div>
+          <div id="proceed">
+          <button id="buynow">Proceed to Buy</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<script src="./cart.js"></script>

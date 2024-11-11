@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reebok</title>
+    <link rel="stylesheet" href="./mens.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div id="logo"><a href="../Navbar/index.html">Reebok</a></div>
+      <div id="links">
+        <a href="../MensPage/mens.html">Men</a>
+        <a href="../WomensPage/womens.html">Women</a>
+        <a href="../CartPage/cart.html" id="cartQty">Cart <span> 🛒</span></a>
+        <a href="../LoginPage/login.html">Logout</a>
+      </div>
+    </div>
+    <h1>Mens Fashion</h1>
+    <div class="view-options">
+      <!-- Filter By Category -->
+      <select name="filter" id="filter" onchange="handleFilter()">
+        <option value="select">Filter By Category</option>
+        <option value="caps">CAPS</option>
+        <option value="topwear">TOPWEAR</option>
+        <option value="bottomwear">BOTTOMWEAR</option>
+        <option value="footwear">FOOTWEAR</option>
+      </select>
+
+      <!-- Sort by price -->
+      <select name="sortPrice" id="sortPrice" onchange="handlePriceSort()">
+        <option value="sort-type">Sort by Price</option>
+        <option value="LTH">low to high</option>
+        <option value="HTL">high to low</option>
+      </select>
+
+      <select name="sortName" id="sortName" onchange="handleNameSort()">
+        <option value="sort-type">Sort by Name</option>
+        <option value="asc">Ascending</option>
+        <option value="dsc">Descending</option>
+      </select>
+    </div>
+
+    <div class="products">
+      <h2>Caps</h2>
+      <section class="caps">
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTvgwXglJYpG1kiOgqD9hn1CSHA8WfDR0FHNR411MGsyKccrCXoDofW5AX_7vviTzRMv-L3OQVtvljya1jY5jde34Y9rcrf12Vr2a_gI3FfBJDbz0w8qTw_&usqp=CAE"
+            alt="reebok cap"
+          />
+          <p class="Category">CASUAL CAP</p>
+          <p class="itemName">Reebok Mens Cap</p>
+          <h4 class="price">₹1999</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQH1d8t5plafxqsqQmGKIJNAEcxHolbO7H0rGkW5tE41PbeqJv7iOMUko4Ni-r7EIaX6eGlPnB_iRYh84aJD2TqrQ15K0VeiAFSPOHar-9mfq2L6_B62gHbuhJq&usqp=CAE"
+            alt="reebok cap"
+          />
+          <p class="Category">SPORTS CAP</p>
+          <p class="itemName">Reebok Mens Cap</p>
+          <h4 class="price">₹1599</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTLkRgEp3LwD2CwzX79FNfQwRPB__Gj2DGf3FBPvZMDPom4IbKSDTGKynAnYY-Q2JQSOTKf39lEIZLFCqJ-YjTM1JjhdEGnDRw6YxwBtsQekxaSCFf0InVUjedu&usqp=CAE"
+            alt="reebok cap"
+          />
+          <p class="Category">VECTOR CAP</p>
+          <p class="itemName">Reebok Mens Cap</p>
+          <h4 class="price">₹1349</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTmIn6Xp82CiGHihG6rg0K9bwPpHcJgvyraed1vysretukfxoUpx5iOAvwcMvQ0OlJupj0fBBgsY2H8Gl_jBGsqoHniWCR8OxEhLmY1JxMrPlnQQfbv9bK5ivA&usqp=CAE"
+            alt="reebok cap"
+          />
+          <p class="Category">OUTDOOR CAP</p>
+          <p class="itemName">Reebok Mens Cap</p>
+          <h4 class="price">₹1699</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+      </section>
+
+      <h2>Topwear</h2>
+      <section class="topwear">
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQw4y0LVZHVs4_dahNqqsq6ZUdimcGqD22uEEwjofyfpEKMe5fHa1EautuOkN67Zux7iht80egYQXtucas1y4_CJ2ji_7HfH4qrtmvk_qZO20HWLejxpZ0m&usqp=CAE"
+            alt="tshirt"
+          />
+          <p class="Category">SPORTS T-SHIRT</p>
+          <p class="itemName">Reebok Mens T-shirt</p>
+          <h4 class="price">₹899</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT7nHoMsSekOUCqujsdiT1KsLX7ClajMO2FLrW6if1mBp3OylWJGP5iSWv631T5moVnemzr46fi52-iOJTlC9_P7MEnv9vqNu3woFZ7bgJM7iBb1RrkGJkP0g&usqp=CAE"
+            alt="tshirt"
+          />
+          <p class="Category">REGULAR FIT SWEATSHIRT</p>
+          <p class="itemName">Reebok Mens Sweatshirt</p>
+          <h4 class="price">₹1299</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT0xrP67q6YJZZy-KsZoDiFW_o_moN5UZEHDIoy3dyawMJiWW55rmYJNgICQ1K1j9LSU3eDlt6mvebol7FAGirm9huEYvJFWjarMVwv_IYVju9Iyx5noD24NA&usqp=CAE"
+            alt="tshirt"
+          />
+          <p class="Category">POLO T-SHIRT</p>
+          <p class="itemName">Reebok Mens Prime Polo</p>
+          <h4 class="price">₹1099</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS16mwZfrlycYN5oRG1eieFgdNkmFyJCGkd75Gwts0wyC3ZDMwT_gke19OG6-QLbr_r61vNqLVz3Tts4FSY-eIK02UT_MQRtRUiSU-sIrVG72PACdR7XelxkA&usqp=CAE"
+            alt="tshirt"
+          />
+          <p class="Category">FULL SLEEVE SOLID JACKET</p>
+          <p class="itemName">Reebok Mens Jacket</p>
+          <h4 class="price">₹1399</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+      </section>
+
+      <h2>Bottomwear</h2>
+      <section class="bottomwear">
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS3G9586t2-iFCyijcSygmyqBzwBVn0kifRlXwIXPyhd9zcXZXHSMN0wUKuiespC-GIdXDpchf4dc4G_PuqGuwqNJt2RSQFlBt07jGmsEyYR6xRvkSge74Ruw&usqp=CAE"
+            alt=""
+          />
+          <p class="Category">TRACK PANT</p>
+          <p class="itemName">Reebok Men's BlackTrack Pant</p>
+          <h4 class="price">₹2999</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src=" https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTRHP6zkhPXam-sK1Nrjw1K8y8oowjXD2ZUq-BPQUUY8BNDRBiLlWYypYbOwhpGVagYI8qUucknEy9UmeE1a53hOf4hxtjmh0HOtijDFwd6H31Gw5CufY3C&usqp=CAE"
+            alt=""
+          />
+          <p class="Category">TRACK PANT</p>
+          <p class="itemName">Reebok Men's Navy Blue Track Pant</p>
+          <h4 class="price">₹1999</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRdEKyNxx94E4-rnrDTuIDxCR-ilxYzyEHEK5W5B0V1Nx1rTiJIhmVBDLt6gJVest5X2yvxyJbC6LsT5fvY66lwWojKol6j1Zc-3KS8oVWMMW9Lk7mvDvT89g&usqp=CAE"
+            alt=""
+          />
+          <p class="Category">TRACK PANT</p>
+          <p class="itemName">Reebok Men's Dark Blue Track Pant</p>
+          <h4 class="price">₹2199</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRB7UPyM6qJu8ZY4eHyzTtkDSHvSS9_W9it-gqf5zXX7ZU1I03qwGpm6y-FFMCr4MjcvycFH3T751BpCxw518vYk0JJuXIyEH0vFJRbTtmL&usqp=CAE"
+            alt=""
+          />
+          <p class="Category">TRACK PANT</p>
+          <p class="itemName">Reebok Men's Dark Green Track Pant</p>
+          <h4 class="price">₹1799</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+      </section>
+      <h2>Footwear</h2>
+
+      <section class="footwear">
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS7QkyFm0xqNMA1pUP_PzxBrXWSomZNzRcpGTvUomNidZoXVddpQaCYCtTBjD5Hw41sP3gDvmYqqcSUYhU1QIy-u_w8oBvj2KbbVfw-XHyH8yrNxujWwtRQ3Q&usqp=CAE"
+            alt="Reebok shoes"
+          />
+          <p class="Category">RUNNING SHOES</p>
+          <p class="itemName">Reebok Men Running Shoes</p>
+          <h4 class="price">₹12999</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSLYFU0Sy72ThpMs4SmVGbm5PkPwf0vCQHpK7QmLAV_rb1LdFRrtuQhq7-rETeDoT96JPV3FZVy4EOZbBYPe4aoxedc6NOdockqR4_I-WR-BQxqE0A9K9xJhAw&usqp=CAE"
+            alt="Reebok shoes"
+          />
+          <p class="Category">PROGRESSIVE SHOES</p>
+          <p class="itemName">Reebok Men Causal Shoes</p>
+          <h4 class="price">₹17499</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQkHPhxfL-nMpgUkw11hIZSIhbJfhN5g_1GRklq_zWr4xQKfk-6JVChVcA45pymnINsDFD1jVek6bp3rj7HUUHV8jEWBBp3OByxC-WKVn5-klAkeua9cbyItcs&usqp=CAE"
+            alt="Reebok shoes"
+          />
+          <p class="Category">LACE-UP BOOTS</p>
+          <p class="itemName">Reebok Men Boots</p>
+          <h4 class="price">₹8999</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img
+            class="pic"
+            src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQsN2LLOhVMqktF5QtAa7AVgk8_e-Q1B-tkhVy0c5t9L11RuaxjaS1HCHJeJ_4U4yxwwdGat7wunaXoVQrkqwarBs-hvSMslAexUeDInIpE2y6m_SBeNiHd8w&usqp=CAE"
+            alt="Reebok shoes"
+          />
+          <p class="Category">BASKETBALL SHOES</p>
+          <p class="itemName">Reebok Men Basketball Shoes</p>
+          <h4 class="price">₹10499</h4>
+          <button class="btn-cart">Add to Cart</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
+<script src="./mens.js"></script>
