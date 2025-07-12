@@ -12,7 +12,7 @@ function signUp(event) {
     if (givenEmail === element.userEmail) {
       userExists = true;
       alert("You are an existing user, Please Login!");
-      window.location.href = "../LoginPage/login.html";
+      window.location.href = "LoginPage/login.html";
     }
   });
 
@@ -27,6 +27,6 @@ function signUp(event) {
     localStorage.setItem("userDetails", JSON.stringify(userArr));
     alert("You are successfully Signed Up");
     form.reset();
-    window.location.href = "/index.html";
+    window.location.href = "./index.html";
   }
 }

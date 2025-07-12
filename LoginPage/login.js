@@ -21,6 +21,6 @@ function loginAction(event) {
   });
   if (!userFound) {
     alert("You are not an Existing User, Please SignUp");
-    window.location.href = "../SignupPage/signup.html ";
+    window.location.href = "SignupPage/signup.html ";
   }
 }
