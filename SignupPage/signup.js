@@ -12,7 +12,7 @@ function signUp(event) {
     if (givenEmail === element.userEmail) {
       userExists = true;
       alert("You are an existing user, Please Login!");
-      window.location.href = "../LoginPage/login.html";
+      window.location.href = "LoginPage/login.html";
     }
   });
 
