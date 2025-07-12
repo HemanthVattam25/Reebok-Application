@@ -10,7 +10,7 @@ function validateOTP(event) {
   if (enteredOtp !== otp) {
     alert("OTP is Incorrect. Please Check");
   } else {
-    alert("OTP verified, Payment Successful");
+    alert("OTP verified, Payment Successfully completed");
   }
-  window.location.href = "../Navbar/index.html";
+  window.location.href = "/index.html";
 }

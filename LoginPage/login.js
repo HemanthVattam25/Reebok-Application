@@ -16,7 +16,7 @@ function loginAction(event) {
     ) {
       userFound = true;
       alert("Login Successful, Welcome to Reebok");
-      window.location.href = "../Navbar/index.html";
+      window.location.href = "/index.html";
     }
   });
   if (!userFound) {

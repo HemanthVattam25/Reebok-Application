@@ -38,7 +38,7 @@ function promoValue() {
       .querySelector("#finalPrice")
       .innerText.replace("Total Amount: ₹", "")
   );
-  if (promoCode === "FLM30") {
+  if (promoCode === "GET30") {
     alert("Promo Applied Successfully");
     let discountedPrice = 0.7 * totalPrice;
     document.querySelector(
