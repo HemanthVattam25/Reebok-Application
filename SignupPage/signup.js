@@ -27,6 +27,6 @@ function signUp(event) {
     localStorage.setItem("userDetails", JSON.stringify(userArr));
     alert("You are successfully Signed Up");
     form.reset();
-    window.location.href = "/index.html";
+    window.location.href = "index.html";
   }
 }
